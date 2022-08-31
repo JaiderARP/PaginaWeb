@@ -1,0 +1,8 @@
+h1{
+    font-family: "cinzel";
+}
+
+@font-face{
+    font-family: "cinzel";
+    src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+}
