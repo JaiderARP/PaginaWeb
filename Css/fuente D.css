@@ -1,10 +1,3 @@
-h1{
-  font-family:'waltograph42';
-
-
-}
-
-@font-face{
-  font-family:'waltograph42';
-  src: url(../fonts/waltograph42.otf);
+body{
+    background-color: aqua;
 }
