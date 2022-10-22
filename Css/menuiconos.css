@@ -1,14 +1,22 @@
-.icon-style{
+.fa-solid{
     color: rgb(135, 150, 161);
     font-size: 1.2em;
     padding-right: 5px;
 }
+.fa-brands{
+    color: rgb(135, 150, 161);
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+li{
+    font-size: 20px;
+}
 nav{
-    background-color: rgb(255, 255, 255);
+    background-color: gainsboro;
     position: fixed;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 2500px;
     height: 100vh;
 }
 ul{
@@ -16,4 +24,7 @@ ul{
 }
 a{
     text-decoration: none;
+}
+i:hover{
+    color: black    ;
 }
