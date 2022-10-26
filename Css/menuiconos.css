@@ -1,3 +1,4 @@
+
 .fa-solid{
     color: rgb(135, 150, 161);
     font-size: 1.2em;
@@ -8,23 +9,36 @@
     font-size: 1.2em;
     padding-right: 5px;
 }
-li{
-    font-size: 20px;
-}
+
+
 nav{
-    background-color: gainsboro;
+    background-color:white;
     position: fixed;
     top: 0;
     left: 0;
-    width: 2500px;
+    width: 300px;
     height: 100vh;
+    border: 2px solid rgb(217, 226, 232);
+
 }
-ul{
-    list-style: none;
+li,ul{
+    height: 30px;
+    padding: 5px;
+    list-style: none;       
 }
 a{
     text-decoration: none;
 }
 i:hover{
     color: black    ;
+}
+hr{
+    background-color: rgb(217, 226, 232);
+    border: 0;
+    margin: 0;
+    width: 95%;
+    height: 1px;
+}
+ul:hover {
+    background-color: rgb(217, 226, 232);
 }
