@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1,h2{
+    text-align: center;
+}
+.box{
+height: 200px;
+width: 200px;
+background-color: rgb(83, 155, 95);
+margin: 0  10px;
+color: aliceblue;
+font-size: 2em;
+}
+.box-direction{
+    display: flex;
+    background-color: aqua;
+    flex-direction:row;
+}
+.box-wrap{
+    display: flex;
+    background-color: aqua;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.box-nowrap{
+    display: flex;
+    background-color: darkcyan;
+    flex-flow: row nowrap;
+}
+.box-wrap-continuo{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: aqua;
+    height: 220px;
+    overflow-x:scroll ;
+padding-bottom: 20px;
+}
+.box-space-between{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+.box-space-around{
+display: flex;
+background-color: aquamarine;
+justify-content: space-around;
+
+}
+.box-space-evenly{
+    height: 220px;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-evenly;
+}
+.box-flex-start{
+    justify-content: flex-start;
+    display: flex;
+    background-color: rgb(127, 246, 255);
+}
+.box-flex-end{
+    justify-content: flex;
+    display: flex;
+    flex-flow: row-reverse;
+    background-color:rgb(127, 246, 255);
+}
+.box-align-start{
+display: flex;
+flex-flow: row-reverse;
+align-items: flex-start;
+background-color:rgb(127, 246, 255) ;
+}
+.box39{
+    height: 500px;
+
+}
+.box40{
+    height: 50px;
+}
+.box-align-end{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: 2px rgb(64,64,64,.8);
+    width: 720px;
+    box-shadow: 0 2px  5x rgb(64,64,64,.8);
+}
+.box-mean-aling{
+    display: flex;
+    justify-content: center;
+}
+
+.box-box-align{
+    width: 100px;
+    margin-bottom: 0;
+    background-color:rgb(127, 246, 255) ;
+}
+.box43{
+    height: 500px;
+   
+}
+.box44{
+    height: 350px;
+   
+}
+.box45{
+    height: 120px;
+   
+}
+.box46{
+    height: 450px;
+}
