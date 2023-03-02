@@ -1,0 +1,20 @@
+* {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+
+}
+
+h1{
+    font-family: 'DS-DIGIB'; 
+    font-size: 9em;
+    color:greenyellow;
+
+}
+
+@font-face {
+    font-family: 'DS-DIGIB'; 
+    src: url(../fonts/DS-DIGIB.TTF);
+}

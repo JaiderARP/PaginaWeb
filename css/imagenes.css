@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box-img {
+    display: inline-block;
+    width: 29%;
+    margin: 30px 1.5%;
+    vertical-align: top;
+    border: 2px solid black;
+}
+.img-style {
+    width: 100%;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.tittle {
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    width: 90%;
+    margin-left: 5%;
+}
+.content {
+    background-color: aliceblue;
+    border: 2px solid black;
+}
