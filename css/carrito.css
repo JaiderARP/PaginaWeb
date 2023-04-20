@@ -1,31 +1,98 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.title{
-    text-align: center;
-}
-.box-main{
+
+.imgs {
     display: grid;
-    margin: 0 20px;
-    grid-template:"img-box-main   empty-right"/ 
-                    435px            1fr;
+    grid-template: "img-box img-box img-box img-box" 460px
+        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        105px 105px 105px 105px;
+    margin-left: 4.9vw;
+    margin-top: 8.5vh;
 }
-img{
+
+.imgs-carrito {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img-opacity {
+    opacity: .4;
+}
+
+.img-main {
+    border-radius: 8px;
+    width: 20px;
+}
+
+.img-predeterminada {
+    border-radius: 8px;
+    width: 400px;
+    position: absolute;
+}
+
+.img-main-animation1,
+.img-main-animation2,
+.img-main-animation3,
+.img-main-animation4 {
+    rotate: -360deg;
+    transition: all 1.5s;
+    width: 400px;
+}
+
+.img-box {
+    grid-area: img-box;
+    margin: 30px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-mini1,
+.img-mini2,
+.img-mini3,
+.img-mini4 {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
 }
-.img-box-main{
-    display: grid;
-    grid-area: img-box-main;
-    height: 100vh;
-    width: 100%;
-    grid-template: "img-box    img-box   img-box    img-box   img-box    img-box   img-box"436px
-                    "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"30px
-                    "box-mini1  empty1    box-mini2  empty2    box-mini3  empty3    box-mini4"90px/
-                    90px        25px      90px       25px      90px       25px      90px;
+
+.img-mini1 {
+    grid-area: img-mini1;
 }
+
+.img-mini2 {
+    grid-area: img-mini2;
+}
+
+.img-mini3 {
+    grid-area: img-mini3;
+}
+
+.img-mini4 {
+    grid-area: img-mini4;
+}
+
+.focus {
+    width: 90px;
+    height: 90px;
+    border: 3px solid rgb(255, 125, 26);
+    border-radius: 11px;
+    top: -2.5px;
+    position: relative;
+}
+
+.img-box-invisible {
+    visibility: hidden;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -95,70 +162,178 @@ a:hover {
     margin-right: 30px;
     cursor: pointer;
 }
-.img-box{
-    grid-area: img-box; 
-    width: 100%;
+
+.avatar {
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
-.rotate{
-    transform: rotate(360deg);
-    transition: 2s;
+
+.avatar:hover {
+    border-radius: 100%;
+    border: 2px solid red;
+    position: relative;
+    left: -2px;
 }
-.img-mini{
-    width: 100%;
-    cursor: pointer;
+
+.div-avatar {
+    width: 32px;
 }
-.box-mini1{
-    grid-area: box-mini1;
+
+.containAddProduct {
+    left: 100px;
+    position: absolute;
+    bottom: 105px;
+    display: grid;
+    grid-template: "informacion informacion" auto
+        "precios   precios  " auto 
+        "cantidad  addProducts  " 60px/
+        150px 370px;
 }
-.box-mini2{
-    grid-area: box-mini2;
+
+.informacion {
+    grid-area: informacion;
+    margin-bottom: 30px;
 }
-.box-mini3{
-    grid-area: box-mini3;
+
+.precios {
+    grid-area: precios;
+    display: grid;
+    grid-template: "precioTotal porcentajeDescuento" auto
+               "precioInicial  empty" auto/
+               170px  50px;
 }
-.box-mini4{
-    grid-area: box-mini4;
+.precioTotal{
+    grid-area: precioTotal;
+    font-size: 2em;
+    font-weight: bolder;
 }
-.box-img-mini{
-    border: 2px solid rgb(255, 125, 26);
-    border-radius: 15px;
+.porcentajeDescuento{
+    grid-area: porcentajeDescuento;
+    background-color: rgb(255,237,224);
+    display: flex;
+    justify-content: center;
+    margin: 6px 3px;
+    padding: 0px 9px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 125, 26);
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 0.9em;
 }
-.img-mini-act{
-    opacity: .4;
+.precioInicial{
+    grid-area: precioInicial;
+    margin: 10px 0px 15px 0px;
+    text-decoration: line-through;
+    color: rgb(182,188,200);
+    font-weight: bolder;
 }
-.icon-op{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(211, 208, 208);
+.cantidad {
+    grid-area: cantidad;
+    background-color: rgb(247, 248, 253);
+    border-radius: 8px;
+}
+
+.addProducts {
+    grid-area: addProducts;
+    background-color: rgb(255, 125, 26);
+    margin: 0px 10px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 900;
-    border: 1px solid whitesmoke;
-}
-.cant-box{
-    display: flex;
-}
-.btn-restar{
-    border-radius: 10px 0 0 10px;
-    color: rgb(255, 125, 26);
-    font-size: 2em;
-}
-.cant-obj{
-    color: rgb(48, 48, 48);
-    font-size: 1.3em;
-}
-.btn-sumar{
-    border-radius: 0px 10px 10px 0px;
-    color: rgb(255, 125, 26);
-    font-size: 2em;
-}
-.btn-restar:hover,
-.cant-obj,
-.btn-sumar{
+    color: white;
+    font-weight: bolder;
+    box-shadow: 1px 10px 15px rgb(245, 193, 153);
+    margin:  3px 20px;
     cursor: pointer;
 }
 
+.contenido {
+    display: flex;
+}
 
+.opciones {
+    position: relative;
+}
 
+.cantidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.plus,
+.minus {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(255, 125, 26);
+}
+
+.divMinus,
+.divPlus,
+.cantidadNumero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cantidadNumero {
+    cursor: unset;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 50px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: rgb(128, 112, 125);
+}
+h5{
+    color: rgb(255,125,26);
+    margin-bottom: 10px;
+}
+.contenidoFocus{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.731);
+    top: 0;
+    left: 0;
+}
+.contenidoFocusCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.imgsFocus {
+    display: grid;
+    grid-template: "img-box img-box img-box img-box" 460px
+        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        105px 105px 105px 105px;
+}
+.insivible{
+    display: none;
+}
+@media screen and (max-width: 735px) {
+    .container {
+        overflow-x: scroll;
+    }
+
+    .img-predeterminada {
+        position: relative;
+        left: 10px;
+    }
+
+    #idImgMain1 {
+        position: relative;
+        left: -200px;
+    }
+}
