@@ -337,3 +337,61 @@ h5{
         left: -200px;
     }
 }
+.lightbox {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 64, 64,.8);
+    width: 100%;
+    height: 100vh;
+}
+.light-hidden {
+    display: none;
+    
+}
+
+.main-lightbox {
+    width: 550px;
+    height: 600px;
+    
+}
+
+.btn-style {
+  border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 24, 24);
+    position: relative;
+    top: 198px ;
+
+}
+
+.btn-atras{
+    left: -25px;
+    z-index: 20;
+}
+
+.btn-adelante {
+    left: 95%;
+    z-index: 20;
+    top: 231px;
+    
+}
+
+.style-btn {
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.img-main-light {
+    position: relative;
+    top: -88px;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 10;
+}
+

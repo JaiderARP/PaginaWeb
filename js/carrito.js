@@ -157,3 +157,8 @@ idPlus.addEventListener("click", function () {
     idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx') ;
 
 })
+
+let lightBox = document.getElementById("lightBox");
+imgPredeterminada.addEventListener("click", function(){
+    lightBox.classList.remove("light-hidden");
+})
