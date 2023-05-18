@@ -1,35 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transition</title>
+    <title>Slider</title>
     <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
-    <div class="main-content">
-        <div class="empty-left"></div>
-    <nav class="main-nav" >
-        <div class="logo-box">
-            <img class="img-logo" src="img/Bandera-Noruega.jpg" alt="logo noruega">
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/noruega-en-febrero 1.080 x 721.png" alt="" class="slider-img">
+            </div>
+            <div class="slider__section">
+                <img src="img/noruega_1.200x800.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider__section">
+                <img src="img/noruega_1280x720.jpg" alt="" class="slider-img">
+            </div>
         </div>
-        <ul class="main-ul">
-            <li class="style-li" ><a class="style-item" href="#">Paisajes</a></li>
-            <li class="style-li" ><a class="style-item" href="#">Pais</a> </li>
-            <li class="style-li" ><a class="style-item" href="#">lugar</a></li>
-        </ul>
-    </nav>
-    <img id="leftArrow" src="img/izquierda (2).png" alt="" class="flecha-atras">
-    <div class="box-marco">    
-        <img id="imgNoruegaCamry" class="img-Noruega-Camry" src="img/noruega-en-febrero 1.080 x 721.png" alt="Paisaje">
-        <img id="imgNoruegaPlaya" class="img-Noruega-Playa-hidden-right" src="img/noruega_1.200x800.jpg" alt="Paisaje">
-        <img id="imgNoruegaRav4" class="img-Noruega-rav4-hidden-right" src="img/noruega-en-febrero 1.080 x 721.png" alt="Paisaje">
-        </div> <img id="rightArrow" src="img/derechaa.png" alt="" class="flecha-adelante">
-        
-    
-    <div class="empty-right"></div>
-    <div class="iconos">iconos</div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </div>
     <script src="js/slider.js"></script>
 </body>

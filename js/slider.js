@@ -1,21 +1,38 @@
-let leftArrow = document.getElementById("leftArrow");
-let imgNoruegaCamry = document.getElementsBy("imgNoruegaCamry");
-let imgNoruegaPlaya = document.getElementById("imgNoruegaPlaya");
-let imgNoruegaRav4 = document.getElementById("imgNoruegaRav4");
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLast = sliderSection [sliderSection.length -1];
 
-leftArrow.addEventListener("click", function(){
-    if (imgNoruegaCamry.classlist.contains("img-Noruega-Camry")){
-        imgNoruegaCamry.classlist.remove("img-Noruega-Camry");
-        imgNoruegaCamry.classlist.add("img-Noruega-Camry-hidden");
-        imgNoruegaPlaya.classlist.add("img-Noruega-Playa");
-        imgNoruegaPlaya.classList.remove("img-Noruega-Playa-hidden-right");
-    }
-    else if(imgNoruegaPlaya.classList.contains("img-Noruega-Playa")) {
-        imgNoruegaPlaya.classList.remove("img-Noruega-Playa");
-        imgNoruegaPlaya.classList.add("img-Noruega-Playa-hidden-left");
-        imgNoruegaRav4.classList.add("img-Noruega-rav4");
-        imgNoruegaRav4.classList.remove("img-Noruega-rav4-hidden-right");
-    }
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-    
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+function moverDerecha() {
+    let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst );
+        slider.style.marginLeft = "-100%";
+    },500);
+}
+
+function moverIzquierda() {
+    let sliderSection = document.querySelectorAll(".slider__section");
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = "-100%";
+    },500);
+}
+
+btnRight.addEventListener('click', function(){
+    moverDerecha();
+});
+btnLeft.addEventListener('click', function(){
+    moverIzquierda();
 });
