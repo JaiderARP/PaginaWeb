@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Vencimiento</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Vencimiento</h1>
+    <form id="formulario">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required><br><br>
+       
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required><br><br>
+       
+        <input type="submit" value="Calcular tiempo restante">
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var fechaInput = document.getElementById("fecha").value;
+            var horaInput = document.getElementById("hora").value;
+
+            var fechaHoraInput = new Date(fechaInput + " " + horaInput);
+            var fechaActual = new Date();
+
+            if (fechaHoraInput < fechaActual) {
+                document.getElementById("resultado").innerHTML = "El plazo ya ha vencido. No es posible subir el archivo.";
+                return;
+            }
+
+            var tiempoRestante = fechaHoraInput - fechaActual;
+            var dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("resultado").innerHTML = "Tiempo restante: " + dias + " días, " + horas + " horas, " + minutos + " minutos.";
+        });
+    </script>
+</body>
+</html>
