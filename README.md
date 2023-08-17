@@ -5,17 +5,13 @@
     <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
 </div></br>
 
-Visita mi <a href="https://fernandd0.github.io/portfolio/">web personal</a>. Dejame criticas constructivas...
+Visita mi <a href="https://jaiderarp.github.io/ADSO2556456/">web personal</a>. Dejame criticas constructivas...
 ![PORTFOLIO](assets/img/portfolio.png)
 ![PORTFOLIO](assets/img/portfolio-dark.png)
 </br>
 
 ## Contacto
-[![Email](	https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandd.to.dev@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fernandd0)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Fernandddd0)
-
-</br>
-
-[![BuyMeACoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-$2.5-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white&labelColor=101010)](https://www.buymeacoffee.com/fernandd0)
+[![Email](	https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mateo08112@gmail.com)
+[![Facebook](https://img.shields.io/badge/Facebook-0077B5?style=for-the-badge&logo=Facebook&logoColor=white)]()
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JaiderARP)
+[![Instagram](https://img.shields.io/badge/Instagram-1DA1F2?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/jaiderpro0812/?fbclid=IwAR3kKXRQR-b8ut-ggkOAI-4w8tozllpOdSGnOww6XDkFnSQJv12jNY3X9XY)
