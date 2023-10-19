@@ -13,6 +13,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: rgb(54, 56, 77);
 }
 
 .card
@@ -105,10 +106,16 @@ h1
 {
     font-size: 50px;
 }
+.hola{
+    text-align: center;
+}
 
 .hide
 {
     display: none;
+}
+.parrafo2{
+    text-align: center;
 }
 
 .card-2
@@ -120,12 +127,17 @@ h1
     
     
 }
+.icono{
+    display: flex;
+    justify-content: center;
+}
 .card-2  h1{
     font-size: 40px;
 }
 
 .card-2 button{
     width: 100%;
+
 }
 
 @media (max-width: 768px)
