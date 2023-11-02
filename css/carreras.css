@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-img{
+    position: fixed;
+    top: 0;
+    width: 100000px;
+    height: 104vh;
+    background-size: contain;
+    background-position:center bottom;
+    background-repeat: repeat-x;
+    background-image: url("../img/paisajeanimado.jpg");
+    z-index: 10;
+}
+.main-img-0{
+    left: 0;
+}
+
+.main-img-1{
+  left: -90000px;
+  transition: all 200s;
+}
+
+.style-gif{
+    position: absolute;
+    width: 200px;
+    z-index: 20;
+
+   }
+.main-carrito-up-0 {
+    bottom: 10px;
+    transition: all 1s;
+}
+.main-carrito-up-1 {
+    bottom: 30px;
+    transition: all 1s;
+   
+}
