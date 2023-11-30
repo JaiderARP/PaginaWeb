@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrellas</title>
+    <style>
+        .star-rating {
+            font-size: 0;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .star-rating label:before {
+            content: '\2605';
+            margin: 5px;
+            font-size: 30px;
+        }
+
+        .star-rating input:checked + label,
+        .star-rating input:checked + label:before {
+            color: #fdd835;
+            /* Cambia el color de las estrellas seleccionadas */
+        }
+
+        .star-rating input[type="radio"]:not(:checked) ~ label:hover,
+        .star-rating input[type="radio"]:not(:checked) ~ label:hover:before {
+            color: #ffeb3b;
+            /* Cambia el color al pasar el ratón sobre las estrellas no seleccionadas */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contador {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post" id="estrellasForm">
+        <label for="cantidadEstrellas">Cantidad de Estrellas:</label>
+        <input type="number" id="cantidadEstrellas" name="cantidadEstrellas" min="1" max="5">
+        <button type="button" onclick="generarEstrellas()">Generar Estrellas</button>
+
+        <label for="rating">Puntuación:</label>
+        <div class="star-rating" id="star-rating">
+    </form>
+    <script>
+        function generarEstrellas() {
+    var cantidadEstrellas = document.getElementById("cantidadEstrellas").value;
+    var starRatingContainer = document.getElementById("star-rating");
+
+    starRatingContainer.innerHTML = "";
+
+    for (var i = 1; i <= 5; i++) {
+        var inputId = "star" + i;
+        var inputValue = i;
+
+        var input = document.createElement("input");
+        input.type = "radio";
+        input.name = "rating";
+        input.id = inputId;
+        input.value = inputValue;
+
+        if (inputValue <= cantidadEstrellas) {
+            input.checked = true; // Marcar automáticamente las estrellas hasta la cantidad ingresada
+        }
+
+        var label = document.createElement("label");
+        label.htmlFor = inputId;
+
+        starRatingContainer.appendChild(input);
+        starRatingContainer.appendChild(label);
+    }
+}
+    </script>
+
+</body>
+
+</html>
