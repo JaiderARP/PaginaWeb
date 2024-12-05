@@ -1,7 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: "diciembre";
+    font-family: "diciembre"; 
 }
 
 @font-face {
@@ -23,7 +23,6 @@
 
 .nav nav ul li {
     list-style: none;
-
 }
 
 .nav nav ul li a:hover {
@@ -36,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(7, 140px);
     grid-template-rows: 60px 70px repeat(7, 100px);
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .dia1 {
@@ -95,16 +94,16 @@ h4 {
 }
 
 .diasMes.festivo:hover {
-    border: 3px blue solid;
+    outline: 3px blue solid;
 }
 
 .diasMes:hover {
-    border: 3px solid darkcyan;
+    outline: 3px solid darkcyan;
     cursor: pointer;
 }
 
 .diasSemana:hover {
-    border: 3px solid darkcyan;
+    outline: 3px solid darkcyan;
     cursor: pointer;
 }
 .festivos {
